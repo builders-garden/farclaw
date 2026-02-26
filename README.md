@@ -106,10 +106,11 @@ openclaw pairing list telegram
 openclaw pairing approve telegram <CODE>
 ```
 
-10. Send a DM to your bot and test:
-   - content planning
-   - draft generation
-   - publish approval flow
+10. Send a DM to your bot and bootstrap tone profile first:
+   - ask: `Bootstrap tone profile from my cast history (FID <your fid>).`
+   - then test content planning
+   - then test draft generation
+   - then test publish approval flow
 11. Customize your project context before real usage:
    - edit `workspaces/orchestrator/KNOWLEDGE.md` with your product, audience, voice, and constraints
    - this file is synced to all agent workspaces at startup
