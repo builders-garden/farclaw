@@ -1,13 +1,91 @@
-# Project Knowledge
+# FarCon Rome 2026 Knowledge Base
 
-Replace this file with your canonical project context.
+## Event Overview
+- Name: FarCon Rome 2026
+- Tagline: The annual gathering for Farcaster enthusiasts
+- Dates: May 4-5, 2026
+- Location: Rome, Italy
+- Main site: https://farcon.eu
+- MiniApp: https://farcaster.xyz/miniapps/bXodEs141bmW/farcon-rome
+- Channel: https://farcaster.xyz/~/channel/farcon-rome
+- Contact: hello@farcon.eu
 
-Suggested sections:
-- What you are building
-- Audience and positioning
-- Current priorities
-- Key links and references
-- Product facts that must stay accurate
-- Content do's and don'ts
+## Venue
+- Venue name: Palazzo Brancaccio
+- Address: Viale del Monte Oppio 7, 00184 Roma
+- Maps: https://maps.app.goo.gl/JmiSii9H7uXQF1Qn8
 
-Keep this file short, factual, and updated.
+## Schedule
+### Day 1 - Builders Day (May 4, 2026)
+- Time: 8:30 AM to 6:00 PM
+- Focus: builders and founders, dev Q&A, networking, showcases
+
+### Day 2 - Summit (May 5, 2026)
+- Time: 8:30 AM to 6:00 PM
+- Focus: talks, panels, and broader Farcaster community
+
+## Tickets
+- Main public ticket: Summit Ticket
+- Price: 200 USDC
+- Mint flow: farcon.eu MiniApp on Farcaster
+- Format: soulbound NFT (non-transferable)
+- Chain: Base
+- OpenSea: https://opensea.io/collection/ticket-for-summit-farcon-rome-2026
+
+## Programs
+- FarHack Online 2026: https://farhack.xyz/hackathons/farhack-online-2026
+- Bootcamp: https://luma.com/f7ok6tbp
+- Theme: building the agentic web on Farcaster
+
+## Rome Stay and City Guide (source integrated from farcon-rome-staying)
+- Primary guide URL: https://farconeu.notion.site/farcon-rome-staying
+- Fast accommodation support group: https://t.me/+0eVCwB_glXY3ZTU0
+
+### Best Areas to Stay
+- Monti: 8-10 minute walk to Palazzo Brancaccio
+- Colosseum and Celio: 10-15 minute walk, quieter historic area
+- Esquilino and Piazza Vittorio: 5-7 minute walk, closest zone, Metro A access
+- Centro Storico: premium central stay, 10-20 minute taxi or scooter to venue
+- San Saba and Aventino: calmer residential option between venue and Urbe Hub
+
+### Getting to Palazzo Brancaccio
+- Metro B: Colosseo or Cavour then short walk
+- Metro A: Vittorio Emanuele then short walk
+- Buses nearby: 75, 85, 87, 117, 186, 673
+- Taxi ask-for text: Palazzo Brancaccio, Viale del Monte Oppio 7
+
+### Around the Venue
+- Colle Oppio Park
+- Domus Aurea
+- Colosseum
+- Basilica di San Pietro in Vincoli
+- Monti district and Via dei Fori Imperiali
+
+### Near-Venue Food and Drink Shortlist
+- Quick: Trieste Pizza, Forno da Milvio, Pizzeria Alle Carrette
+- Sit-down: Ai Tre Scalini, Trattoria Monti, La Carbonara, Taverna dei Fori Imperiali
+- Aperitivo and evening: Drink Kong, Blackmarket Hall, Fafiuche, Spritzeria Monti
+
+### Rome Transport Essentials
+- 100-minute ticket: EUR 1.50, valid across bus, tram, metro
+- Airport routes: Leonardo Express from Fiumicino to Termini; shuttle from Ciampino to Termini
+- Useful apps: Moovit, Roma Mobilita, itTaxi, FreeNow
+- Micromobility: Lime, Bird, Dott, eCooltra
+
+### Broader Rome Recommendations Mentioned in Guide
+- Coffee and breakfast classics near historic center
+- Roman cuisine spots (including Testaccio and Trastevere clusters)
+- Pizza and bakery references across city neighborhoods
+- Wine bars and aperitivo spots, including Trastevere and central Rome
+- Landmark shortlist: Colosseum, Forum/Palatine, Pantheon, Trevi, Piazza Navona, Vatican, Villa Borghese, Trastevere, Aventine
+
+## Urbe Hub Reference
+- URL: https://urbe.build/urbe-hub
+- Positioning: Italy's first dedicated space for Web3 innovation
+- Area: Testaccio
+- Access notes: Metro B Piramide + walk, buses 170/75/23/3, parking at Largo Dino Frisullo
+
+## Content Guidance
+- Keep voice authentic and community-native, avoid corporate tone
+- Prioritize clear logistics and practical details over hype
+- Use this knowledge for drafts and planning; verify time-sensitive details live before publishing
