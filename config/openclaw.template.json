@@ -1,0 +1,113 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "${PRIMARY_MODEL}",
+        "fallbacks": [
+          "${FALLBACK_MODEL}"
+        ]
+      },
+      "subagents": {
+        "maxSpawnDepth": 2,
+        "maxChildrenPerAgent": 5,
+        "maxConcurrent": 4,
+        "archiveAfterMinutes": 120
+      }
+    },
+    "list": [
+      {
+        "id": "orchestrator",
+        "name": "${PROJECT_NAME} Orchestrator",
+        "default": true,
+        "workspace": "/data/workspace-orchestrator",
+        "identity": {
+          "name": "Orchestrator"
+        },
+        "subagents": {
+          "allowAgents": [
+            "strategist",
+            "drafter",
+            "tone",
+            "engager"
+          ]
+        }
+      },
+      {
+        "id": "strategist",
+        "name": "${PROJECT_NAME} Strategist",
+        "workspace": "/data/workspace-strategist",
+        "identity": {
+          "name": "Strategist"
+        }
+      },
+      {
+        "id": "drafter",
+        "name": "${PROJECT_NAME} Drafter",
+        "workspace": "/data/workspace-drafter",
+        "identity": {
+          "name": "Drafter"
+        }
+      },
+      {
+        "id": "tone",
+        "name": "${PROJECT_NAME} Tone",
+        "workspace": "/data/workspace-tone",
+        "model": "${FALLBACK_MODEL}",
+        "identity": {
+          "name": "Tone"
+        }
+      },
+      {
+        "id": "engager",
+        "name": "${PROJECT_NAME} Engager",
+        "workspace": "/data/workspace-engager",
+        "model": "${FALLBACK_MODEL}",
+        "identity": {
+          "name": "Engager"
+        }
+      }
+    ]
+  },
+  "bindings": [
+    {
+      "agentId": "orchestrator",
+      "match": {
+        "channel": "telegram"
+      }
+    }
+  ],
+  "tools": {
+    "agentToAgent": {
+      "enabled": true,
+      "allow": [
+        "orchestrator",
+        "strategist",
+        "drafter",
+        "tone",
+        "engager"
+      ]
+    },
+    "sessions": {
+      "visibility": "all"
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "paired",
+      "allowFrom": []
+    }
+  },
+  "gateway": {
+    "trustedProxies": [
+      "127.0.0.1"
+    ],
+    "controlUi": {
+      "allowedOrigins": []
+    }
+  },
+  "cron": {
+    "enabled": true,
+    "sessionRetention": "24h"
+  }
+}

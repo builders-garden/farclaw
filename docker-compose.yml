@@ -1,0 +1,19 @@
+services:
+  openclaw:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+      - "18789:18789"
+    env_file:
+      - .env
+    environment:
+      - PORT=8080
+      - OPENCLAW_STATE_DIR=/data/.openclaw
+    volumes:
+      - farclaw-data:/data
+    restart: unless-stopped
+
+volumes:
+  farclaw-data:
