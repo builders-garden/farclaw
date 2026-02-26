@@ -110,6 +110,9 @@ openclaw pairing approve telegram <CODE>
    - content planning
    - draft generation
    - publish approval flow
+11. Customize your project context before real usage:
+   - edit `workspaces/orchestrator/KNOWLEDGE.md` with your product, audience, voice, and constraints
+   - this file is synced to all agent workspaces at startup
 
 ## Safety defaults
 
