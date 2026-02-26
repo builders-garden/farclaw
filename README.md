@@ -1,5 +1,9 @@
 # Farclaw
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/qvhYVc?referralCode=ZUrs1W&utm_medium=integration&utm_source=template&utm_campaign=generic)
+
+Deploy link: https://railway.com/deploy/qvhYVc?referralCode=ZUrs1W&utm_medium=integration&utm_source=template&utm_campaign=generic
+
 Open-source OpenClaw template for running a 5-agent Farcaster content team with Telegram control.
 
 ## What you get
@@ -73,12 +77,39 @@ Ask the orchestrator:
 
 The tone agent should fetch historical casts once and write guidance to `TONE_PROFILE.md`.
 
-## Railway deploy
+## Railway deploy (step-by-step)
 
-1. Create a Railway project from this repo.
-2. Add a volume mounted at `/data`.
-3. Set `PORT=8080` and required env vars.
-4. Expose HTTP on port `8080`.
+1. Click the deploy button above (or use the direct link) and create a new Railway project.
+2. Add a persistent volume and mount it at `/data`.
+3. Confirm service port is `8080` and set:
+   - `PORT=8080`
+4. Fill required provider secrets:
+   - `OPENROUTER_API_KEY` from OpenRouter Keys: https://openrouter.ai/keys
+   - `TELEGRAM_BOT_TOKEN` from BotFather: https://t.me/BotFather
+   - BotFather setup guide: https://core.telegram.org/bots#6-botfather
+   - `NEYNAR_API_KEY` from Neynar dashboard: https://neynar.com/
+   - `NEYNAR_SIGNER_UUID` (create signer + approve once): https://docs.neynar.com/docs/write-to-farcaster-with-signer
+5. Set optional but recommended Farcaster identity fields:
+   - `FARCASTER_HANDLE` (without `@`)
+   - `FARCASTER_FID` (your numeric FID)
+   - `FARCASTER_CHANNEL_ID` (default channel slug)
+6. Set security/config variables:
+   - `SETUP_PASSWORD=${secret(32)}`
+   - `OPENCLAW_GATEWAY_TOKEN=${secret(64)}`
+   - `TELEGRAM_ALLOWED_USER_ID=<your telegram numeric user id>` (recommended)
+7. Add `RAILWAY_DOMAIN` to your generated Railway domain (no `https://`).
+8. Deploy, then open logs and confirm boot finished without missing env errors.
+9. Pair Telegram if prompted:
+
+```bash
+openclaw pairing list telegram
+openclaw pairing approve telegram <CODE>
+```
+
+10. Send a DM to your bot and test:
+   - content planning
+   - draft generation
+   - publish approval flow
 
 ## Safety defaults
 
