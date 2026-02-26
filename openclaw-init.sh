@@ -23,8 +23,11 @@ mkdir -p "${CONFIG_DIR}" "/data"
 
 template_vars='${PROJECT_NAME} ${PRIMARY_MODEL} ${FALLBACK_MODEL} ${FARCASTER_HANDLE} ${FARCASTER_FID} ${FARCASTER_CHANNEL_ID}'
 
-# Render the OpenClaw config from template into persistent state.
-envsubst "$template_vars" < /opt/farclaw-config/openclaw.template.json > "${CONFIG_DIR}/openclaw.json"
+# Render the OpenClaw config from template only on first boot.
+# Keep existing config to avoid resetting gateway auth/device pairing state.
+if [ ! -s "${CONFIG_DIR}/openclaw.json" ]; then
+  envsubst "$template_vars" < /opt/farclaw-config/openclaw.template.json > "${CONFIG_DIR}/openclaw.json"
+fi
 
 # Patch optional runtime config values.
 OPENCLAW_CONFIG_PATH="${CONFIG_DIR}/openclaw.json" \
