@@ -37,47 +37,11 @@
 - Bootcamp: https://luma.com/f7ok6tbp
 - Theme: building the agentic web on Farcaster
 
-## Rome Stay and City Guide (source integrated from farcon-rome-staying)
-- Primary guide URL: https://farconeu.notion.site/farcon-rome-staying
-- Fast accommodation support group: https://t.me/+0eVCwB_glXY3ZTU0
-
-### Best Areas to Stay
-- Monti: 8-10 minute walk to Palazzo Brancaccio
-- Colosseum and Celio: 10-15 minute walk, quieter historic area
-- Esquilino and Piazza Vittorio: 5-7 minute walk, closest zone, Metro A access
-- Centro Storico: premium central stay, 10-20 minute taxi or scooter to venue
-- San Saba and Aventino: calmer residential option between venue and Urbe Hub
-
-### Getting to Palazzo Brancaccio
-- Metro B: Colosseo or Cavour then short walk
-- Metro A: Vittorio Emanuele then short walk
-- Buses nearby: 75, 85, 87, 117, 186, 673
-- Taxi ask-for text: Palazzo Brancaccio, Viale del Monte Oppio 7
-
-### Around the Venue
-- Colle Oppio Park
-- Domus Aurea
-- Colosseum
-- Basilica di San Pietro in Vincoli
-- Monti district and Via dei Fori Imperiali
-
-### Near-Venue Food and Drink Shortlist
-- Quick: Trieste Pizza, Forno da Milvio, Pizzeria Alle Carrette
-- Sit-down: Ai Tre Scalini, Trattoria Monti, La Carbonara, Taverna dei Fori Imperiali
-- Aperitivo and evening: Drink Kong, Blackmarket Hall, Fafiuche, Spritzeria Monti
-
-### Rome Transport Essentials
-- 100-minute ticket: EUR 1.50, valid across bus, tram, metro
-- Airport routes: Leonardo Express from Fiumicino to Termini; shuttle from Ciampino to Termini
-- Useful apps: Moovit, Roma Mobilita, itTaxi, FreeNow
-- Micromobility: Lime, Bird, Dott, eCooltra
-
-### Broader Rome Recommendations Mentioned in Guide
-- Coffee and breakfast classics near historic center
-- Roman cuisine spots (including Testaccio and Trastevere clusters)
-- Pizza and bakery references across city neighborhoods
-- Wine bars and aperitivo spots, including Trastevere and central Rome
-- Landmark shortlist: Colosseum, Forum/Palatine, Pantheon, Trevi, Piazza Navona, Vatican, Villa Borghese, Trastevere, Aventine
+## Rome Stay and City Guide
+- Full guide: https://farconeu.notion.site/farcon-rome-staying
+- Accommodation support group: https://t.me/+0eVCwB_glXY3ZTU0
+- Closest area: Esquilino (5-7 min walk); also Monti (8-10 min) and Colosseum/Celio (10-15 min)
+- Metro: B (Colosseo/Cavour) or A (Vittorio Emanuele) then short walk
 
 ## Urbe Hub Reference
 - URL: https://urbe.build/urbe-hub
