@@ -26,7 +26,16 @@ api_get() {
 api_post() {
   local endpoint="$1"
   local data="$2"
-  curl -sf -X POST -H "x-api-key: $API_KEY" -H "Content-Type: application/json" --data-binary @- "${API_BASE}${endpoint}" <<< "$data"
+  local http_code body
+  body=$(curl -s -w "\n%{http_code}" -X POST -H "x-api-key: $API_KEY" -H "Content-Type: application/json" --data-binary @- "${API_BASE}${endpoint}" <<< "$data")
+  http_code=$(echo "$body" | tail -n1)
+  body=$(echo "$body" | sed '$d')
+  if [[ "$http_code" -lt 200 || "$http_code" -ge 300 ]]; then
+    echo "Error: API returned HTTP $http_code" >&2
+    echo "$body" >&2
+    return 1
+  fi
+  echo "$body"
 }
 
 require_signer() {
@@ -108,6 +117,12 @@ cmd_reply() {
     echo "Usage: neynar.sh reply <parentHashOrUrl> <text> [channelId] [parentAuthorFid]" >&2
     exit 1
   }
+
+  if [[ -n "$parent_author_fid" && ! "$parent_author_fid" =~ ^[0-9]+$ ]]; then
+    echo "Error: parentAuthorFid must be numeric, got '$parent_author_fid'" >&2
+    echo "Hint: check that the reply text is properly quoted" >&2
+    exit 1
+  fi
 
   local data
   data=$(jq -n \
